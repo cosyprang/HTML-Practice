@@ -11,6 +11,8 @@ body {
     background-size: cover;
 }
 
+/* Header Zone */
+
 header {
     /* width: 100%; */
     padding: 7px;
@@ -81,19 +83,7 @@ a {
     transition: all 0.15s;
 }
 
-/* .right-menu ul {
-    display: flex;
-    padding-right: 1rem;
-    border: 1px solid red;
-} */
 
-/* .right-menu .right-menu-btn {
-    color: black;
-}
-
-.right-menu .right-menu-btn a {
-    color: black;
-} */
 
 /* Content Zone */
 .container {
