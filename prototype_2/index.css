@@ -1,0 +1,166 @@
+:root {
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+header {
+    height: 800px;
+    background-image: url(https://images.unsplash.com/photo-1495549115977-ca0a18c9f6a4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    a {
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .logo-left {
+            margin: 2rem 1rem;
+            font-size: 30px;
+        }
+        .menu.show{
+            display: flex;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li {
+                margin-left: 2rem;
+                padding-left: 0.5rem;
+                list-style: none;
+            }
+        }
+        .hamburger {
+            display: none;
+            position: absolute;
+            margin-top: 2.5rem;
+            margin-left: 2rem;
+        }
+    }
+    .middle-content {
+        .content-wrapper {
+            color: var(--white);
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin: 150px 300px;
+            /* border: 1px solid red; */
+
+            .content-box {
+                /* border: 1px solid red; */
+                width: 500px;
+                height: 280px;
+                color: var(--white);
+                margin-top: 2rem;
+                h1 {
+                    font-size: clamp(1rem, 50px, 80px);
+                    padding-bottom: 1rem;
+                }
+                p {
+                    font-size: clamp(1rem, 16px, 25px);
+                    padding-bottom: 3rem;
+                }
+                .content-btn {
+                    padding: 15px 40px;
+                    background-color: rgb(20, 188, 255);
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+    @media screen and (max-width: 768px) {
+        height: auto;
+        padding: 3rem 0;
+        .wrapper {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .hamburger {
+                display: none;
+            }
+        }
+        .middle-content {
+            .content-wrapper {
+                flex-direction: column;
+                height: auto;
+                .menu {
+                    flex-direction: column;
+                }
+            }
+        }
+        
+    }
+
+    @media screen and (max-width: 360px) {
+        height: auto;
+        padding: 3rem 0;
+        .wrapper {
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            display: flex;
+            margin: 0 1rem;
+            width: 330px;
+            /* border: 1px solid red; */
+            .logo-left {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .menu {
+                display: none;
+                flex-direction: column;
+                /* border: 1px solid red; */
+                li {
+                    margin-left: 0;
+                    margin-top: 1rem;
+                }
+                
+            }
+            .hamburger {
+                display: flex;
+                position: absolute;
+                right: 10px;
+            }
+        }
+        .middle-content{
+            .content-wrapper{
+                width: 300px;
+                flex-direction: column;
+                display: flex;
+                margin-left: 2rem;
+                /* border: 1px solid red; */
+                .content-box {
+                    width: 300px;
+                    flex-direction: column;
+                    /* border: 1px solid red; */
+                }
+            }
+        }
+    }
+}
