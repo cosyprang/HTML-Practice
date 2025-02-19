@@ -53,6 +53,7 @@ body::before {
                 padding-bottom: 1rem;
             }
             a {
+                text-decoration: none;
                 padding: 1rem 3rem;
                 border: none;
                 background-color: var(--btn-cl);

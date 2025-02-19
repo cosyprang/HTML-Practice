@@ -10,10 +10,6 @@
     box-sizing: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
 .grid-card-container {
     background-color: white;
     display: grid;
@@ -41,6 +37,7 @@ a {
     .grid-card-text-wrapper {
         padding-top: 1rem;
         a {
+            text-decoration: none;
             font-size: 30px;
             color: var(--black-text);
         }

@@ -11,10 +11,6 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-}
-
 .info-about-container {
     width: 100%;
     height: 100vh;
@@ -32,24 +28,24 @@ a {
         align-items: center;
         .suit {
             position: relative;
-            width: 600px;
+            width: 550px;
             height: 500px;
-            left: 150px;
+            left: 200px;
             z-index: 2;
         }
         .tailor-person {
             position: relative;
             width: 280px;
             height: 380px;
-            left: 50px;
             top: 60px;
+            right: 20px;
             z-index: 3;
         }
     }
     .info-text-container {
         position: relative;
-        right: 200px;
-        width: 1000px;
+        right: 100px;
+        width: 800px;
         height: 600px;
         display: flex;
         flex-direction: column;
@@ -75,6 +71,7 @@ a {
                 padding-bottom: 2.5rem;
             }
             a {
+                text-decoration: none;
                 padding: 1rem 3rem;
                 border: none;
                 background-color: var(--btn-cl);
